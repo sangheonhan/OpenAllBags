@@ -8,6 +8,9 @@ work together with "Soul Pouch".
 
 *** Changelog
 
+Version 3
+Updated TOC for WoW 3.0.2
+
 Version 2
 Added support for guild bank (reported by Greymalkin)
 Removed unused code (reported by Greymalkin)

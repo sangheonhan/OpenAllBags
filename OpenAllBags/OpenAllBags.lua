@@ -1,5 +1,5 @@
 
-local OpenAllBags_Version = 3
+local OpenAllBags_Version = 4
 local OpenAllBags_loaded = false
 
 

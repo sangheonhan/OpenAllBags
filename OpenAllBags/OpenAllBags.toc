@@ -1,0 +1,8 @@
+## Interface: 30000
+## Title: OpenAllBags
+## Author: Kring
+## Notes: Opens all bags whenever you open the bank, the AH, the mail or a trade.
+## SavedVariables:
+## OptionalDeps:
+## Dependencies:
+OpenAllBags.xml

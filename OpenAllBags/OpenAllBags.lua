@@ -1,8 +1,8 @@
 
-local OpenAllBags_Version = 4
+-- Copyright (c) 2009, Sven Kirmess
+
+local OpenAllBags_Version = 5
 local OpenAllBags_loaded = false
-
-
 
 function OpenAllBags_OpenAllBankBags()
 
@@ -12,8 +12,6 @@ function OpenAllBags_OpenAllBankBags()
                 OpenBag(i)
         end
 end
-
-
 
 function OpenAllBags_OnEvent(event)
 
@@ -30,7 +28,7 @@ function OpenAllBags_OnEvent(event)
 		this:RegisterEvent("MERCHANT_CLOSED")
 		this:RegisterEvent("TRADE_CLOSED")
 		this:RegisterEvent("TRADE_SHOW")
-		
+
 		if (not OpenAllBags_loaded) then
 			DEFAULT_CHAT_FRAME:AddMessage(string.format("OpenAllBags %i loaded.", OpenAllBags_Version))
 			OpenAllBags_loaded = true

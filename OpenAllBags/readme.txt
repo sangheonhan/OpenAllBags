@@ -8,6 +8,12 @@ work together with "Soul Pouch".
 
 *** Changelog
 
+Version 5
+Updated TOC for WoW 3.2
+Added license information
+Added link to project main page at
+http://code.google.com/p/open-all-bags/
+
 Version 4
 Updated TOC for WoW 3.1.2
 

@@ -15,14 +15,14 @@ Added link to project main page at
 http://code.google.com/p/open-all-bags/
 
 Version 4
-Updated TOC for WoW 3.1.2
+ * Updated TOC for WoW 3.1.2
 
 Version 3
-Updated TOC for WoW 3.0.2
+ * Updated TOC for WoW 3.0.2
 
 Version 2
-Added support for guild bank (reported by Greymalkin)
-Removed unused code (reported by Greymalkin)
+ * Added support for guild bank (reported by Greymalkin)
+ * Removed unused code (reported by Greymalkin)
 
 Version 1
-Initial release
+* Initial release

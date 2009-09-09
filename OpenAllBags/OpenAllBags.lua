@@ -1,17 +1,8 @@
 
 -- Copyright (c) 2009, Sven Kirmess
 
-local OpenAllBags_Version = 5
+local OpenAllBags_Version = 6
 local OpenAllBags_loaded = false
-
-function OpenAllBags_OpenAllBankBags()
-
-	local i
-
-        for i = NUM_BAG_SLOTS, (NUM_BAG_SLOTS + NUM_BANKBAGSLOTS) do
-                OpenBag(i)
-        end
-end
 
 function OpenAllBags_OnEvent(event)
 

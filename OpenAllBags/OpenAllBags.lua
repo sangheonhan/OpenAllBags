@@ -20,7 +20,7 @@ function OpenAllBags_OnEvent(event)
 		this:RegisterEvent("TRADE_CLOSED")
 		this:RegisterEvent("TRADE_SHOW")
 
-		if (not OpenAllBags_loaded) then
+		if ( not OpenAllBags_loaded ) then
 			DEFAULT_CHAT_FRAME:AddMessage(string.format("OpenAllBags %i loaded.", OpenAllBags_Version))
 			OpenAllBags_loaded = true
 		end

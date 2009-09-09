@@ -4,39 +4,39 @@
 local Version = 6
 local Loaded = false
 
-function OpenAllBags_OnEvent(event)
+local function EventHandler(self, event, ...)
 
 	 if ( event == "PLAYER_ENTERING_WORLD" ) then
-		this:RegisterEvent("AUCTION_HOUSE_SHOW")
-		this:RegisterEvent("AUCTION_HOUSE_CLOSED")
-		this:RegisterEvent("BANKFRAME_OPENED")
-		this:RegisterEvent("BANKFRAME_CLOSED")
-		this:RegisterEvent("GUILDBANKFRAME_OPENED")
-		this:RegisterEvent("GUILDBANKFRAME_CLOSED")
-		this:RegisterEvent("MAIL_SHOW")
-		this:RegisterEvent("MAIL_CLOSED")
-		this:RegisterEvent("MERCHANT_SHOW")
-		this:RegisterEvent("MERCHANT_CLOSED")
-		this:RegisterEvent("TRADE_CLOSED")
-		this:RegisterEvent("TRADE_SHOW")
+		self:RegisterEvent("AUCTION_HOUSE_SHOW")
+		self:RegisterEvent("AUCTION_HOUSE_CLOSED")
+		self:RegisterEvent("BANKFRAME_OPENED")
+		self:RegisterEvent("BANKFRAME_CLOSED")
+		self:RegisterEvent("GUILDBANKFRAME_OPENED")
+		self:RegisterEvent("GUILDBANKFRAME_CLOSED")
+		self:RegisterEvent("MAIL_SHOW")
+		self:RegisterEvent("MAIL_CLOSED")
+		self:RegisterEvent("MERCHANT_SHOW")
+		self:RegisterEvent("MERCHANT_CLOSED")
+		self:RegisterEvent("TRADE_CLOSED")
+		self:RegisterEvent("TRADE_SHOW")
 
 		if ( not Loaded ) then
 			DEFAULT_CHAT_FRAME:AddMessage(string.format("OpenAllBags %i loaded.", Version))
 			Loaded = true
 		end
 	elseif ( event == "PLAYER_LEAVING_WORLD" ) then
-		this:UnregisterEvent("AUCTION_HOUSE_SHOW")
-		this:UnregisterEvent("AUCTION_HOUSE_CLOSED")
-		this:UnregisterEvent("BANKFRAME_OPENED")
-		this:UnregisterEvent("BANKFRAME_CLOSED")
-		this:UnregisterEvent("GUILDBANKFRAME_OPENED")
-		this:UnregisterEvent("GUILDBANKFRAME_CLOSED")
-		this:UnregisterEvent("MAIL_SHOW")
-		this:UnregisterEvent("MAIL_CLOSED")
-		this:UnregisterEvent("MERCHANT_SHOW")
-		this:UnregisterEvent("MERCHANT_CLOSED")
-		this:UnregisterEvent("TRADE_CLOSED")
-		this:UnregisterEvent("TRADE_SHOW")
+		self:UnregisterEvent("AUCTION_HOUSE_SHOW")
+		self:UnregisterEvent("AUCTION_HOUSE_CLOSED")
+		self:UnregisterEvent("BANKFRAME_OPENED")
+		self:UnregisterEvent("BANKFRAME_CLOSED")
+		self:UnregisterEvent("GUILDBANKFRAME_OPENED")
+		self:UnregisterEvent("GUILDBANKFRAME_CLOSED")
+		self:UnregisterEvent("MAIL_SHOW")
+		self:UnregisterEvent("MAIL_CLOSED")
+		self:UnregisterEvent("MERCHANT_SHOW")
+		self:UnregisterEvent("MERCHANT_CLOSED")
+		self:UnregisterEvent("TRADE_CLOSED")
+		self:UnregisterEvent("TRADE_SHOW")
 	elseif (
 		event == "AUCTION_HOUSE_SHOW" or
 		event == "BANKFRAME_OPENED" or
@@ -60,4 +60,10 @@ function OpenAllBags_OnEvent(event)
 		end
         end
 end
+
+-- main
+local frame = CreateFrame("Frame")
+frame:RegisterEvent("PLAYER_ENTERING_WORLD")
+frame:RegisterEvent("PLAYER_LEAVING_WORLD")
+frame:SetScript("OnEvent", EventHandler)
 

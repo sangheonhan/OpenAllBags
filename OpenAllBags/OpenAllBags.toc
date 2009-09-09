@@ -6,4 +6,4 @@
 ## OptionalDeps:
 ## Dependencies:
 ## X-Website: http://code.google.com/p/open-all-bags/
-OpenAllBags.xml
+OpenAllBags.lua

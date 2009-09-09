@@ -1,8 +1,8 @@
 
 -- Copyright (c) 2009, Sven Kirmess
 
-local OpenAllBags_Version = 6
-local OpenAllBags_loaded = false
+local Version = 6
+local Loaded = false
 
 function OpenAllBags_OnEvent(event)
 
@@ -20,9 +20,9 @@ function OpenAllBags_OnEvent(event)
 		this:RegisterEvent("TRADE_CLOSED")
 		this:RegisterEvent("TRADE_SHOW")
 
-		if ( not OpenAllBags_loaded ) then
-			DEFAULT_CHAT_FRAME:AddMessage(string.format("OpenAllBags %i loaded.", OpenAllBags_Version))
-			OpenAllBags_loaded = true
+		if ( not Loaded ) then
+			DEFAULT_CHAT_FRAME:AddMessage(string.format("OpenAllBags %i loaded.", Version))
+			Loaded = true
 		end
 	elseif ( event == "PLAYER_LEAVING_WORLD" ) then
 		this:UnregisterEvent("AUCTION_HOUSE_SHOW")

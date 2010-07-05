@@ -9,6 +9,7 @@ work together with "Soul Pouch".
 *** Changelog
 
 Version 6
+ * Updated TOC for WoW 3.3.5
  * Removed an unused function.
  * No longer use an XML file.
 

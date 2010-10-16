@@ -8,6 +8,9 @@ work together with "Soul Pouch".
 
 *** Changelog
 
+Version 7
+ * Updated TOC for WoW 4.0.1
+
 Version 6
  * Updated TOC for WoW 3.3.5
  * Removed an unused function.

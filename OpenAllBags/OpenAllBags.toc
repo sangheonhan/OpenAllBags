@@ -1,0 +1,9 @@
+## Interface: 40000
+## Title: OpenAllBags
+## Author: Sven Kirmess
+## Notes: Opens all bags whenever you open the bank, the AH, the mail or a trade.
+## SavedVariables:
+## OptionalDeps:
+## Dependencies:
+## X-Website: http://code.google.com/p/open-all-bags/
+OpenAllBags.lua

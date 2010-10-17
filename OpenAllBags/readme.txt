@@ -33,4 +33,4 @@ Version 2
  * Removed unused code (reported by Greymalkin)
 
 Version 1
-* Initial release
+ * Initial release

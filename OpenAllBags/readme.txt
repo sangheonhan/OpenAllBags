@@ -8,6 +8,10 @@ work together with "Soul Pouch".
 
 *** Changelog
 
+Version 8
+ * Updated TOC for WoW 4.3.0
+ * Restored old behaviour because of completely screwed up bag API in 4.3.
+
 Version 7
  * Updated TOC for WoW 4.0.1
 
@@ -33,4 +37,4 @@ Version 2
  * Removed unused code (reported by Greymalkin)
 
 Version 1
- * Initial release
+* Initial release

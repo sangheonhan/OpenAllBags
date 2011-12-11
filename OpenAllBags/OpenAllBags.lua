@@ -1,7 +1,7 @@
 
--- Copyright (c) 2009-2010, Sven Kirmess
+-- Copyright (c) 2009-2011, Sven Kirmess
 
-local Version = 7
+local Version = 8
 local Loaded = false
 
 local function EventHandler(self, event, ...)
@@ -45,7 +45,19 @@ local function EventHandler(self, event, ...)
 		event == "MERCHANT_SHOW" or
 		event == "TRADE_SHOW"
 	) then
-		OpenAllBags(true)
+		CloseAllBags()
+		OpenAllBags()
+
+		if (event == "BANKFRAME_OPENED")
+		then
+			local numSlots, full
+			local i
+
+			numSlots, full = GetNumBankSlots();
+			for i = 0, numSlots do
+				OpenBag(NUM_BAG_SLOTS + 1 + i)
+			end
+		end
 	elseif (
 		event == "AUCTION_HOUSE_CLOSED" or
 		event == "BANKFRAME_CLOSED" or

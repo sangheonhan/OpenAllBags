@@ -8,6 +8,9 @@ work together with "Soul Pouch".
 
 *** Changelog
 
+Version 9
+ * Updated for MoP.
+
 Version 8
  * Updated TOC for WoW 4.3.0
  * Restored old behaviour because of completely screwed up bag API in 4.3.

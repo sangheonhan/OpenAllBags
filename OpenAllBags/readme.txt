@@ -8,6 +8,9 @@ work together with "Soul Pouch".
 
 *** Changelog
 
+Version 10
+ * Updated TOT for WoW 5.2.0
+
 Version 9
  * Updated for MoP.
 

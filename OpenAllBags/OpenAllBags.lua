@@ -7,16 +7,16 @@ local Loaded = false
 local function EventHandler(self, event, ...)
 
 	 if ( event == "PLAYER_ENTERING_WORLD" ) then
-		self:RegisterEvent("AUCTION_HOUSE_SHOW")
 		self:RegisterEvent("AUCTION_HOUSE_CLOSED")
-		self:RegisterEvent("BANKFRAME_OPENED")
+		self:RegisterEvent("AUCTION_HOUSE_SHOW")
 		self:RegisterEvent("BANKFRAME_CLOSED")
-		self:RegisterEvent("GUILDBANKFRAME_OPENED")
+		self:RegisterEvent("BANKFRAME_OPENED")
 		self:RegisterEvent("GUILDBANKFRAME_CLOSED")
-		self:RegisterEvent("MAIL_SHOW")
+		self:RegisterEvent("GUILDBANKFRAME_OPENED")
 		self:RegisterEvent("MAIL_CLOSED")
-		self:RegisterEvent("MERCHANT_SHOW")
+		self:RegisterEvent("MAIL_SHOW")
 		self:RegisterEvent("MERCHANT_CLOSED")
+		self:RegisterEvent("MERCHANT_SHOW")
 		self:RegisterEvent("TRADE_CLOSED")
 		self:RegisterEvent("TRADE_SHOW")
 
@@ -25,16 +25,16 @@ local function EventHandler(self, event, ...)
 			Loaded = true
 		end
 	elseif ( event == "PLAYER_LEAVING_WORLD" ) then
-		self:UnregisterEvent("AUCTION_HOUSE_SHOW")
 		self:UnregisterEvent("AUCTION_HOUSE_CLOSED")
-		self:UnregisterEvent("BANKFRAME_OPENED")
+		self:UnregisterEvent("AUCTION_HOUSE_SHOW")
 		self:UnregisterEvent("BANKFRAME_CLOSED")
-		self:UnregisterEvent("GUILDBANKFRAME_OPENED")
+		self:UnregisterEvent("BANKFRAME_OPENED")
 		self:UnregisterEvent("GUILDBANKFRAME_CLOSED")
-		self:UnregisterEvent("MAIL_SHOW")
+		self:UnregisterEvent("GUILDBANKFRAME_OPENED")
 		self:UnregisterEvent("MAIL_CLOSED")
-		self:UnregisterEvent("MERCHANT_SHOW")
+		self:UnregisterEvent("MAIL_SHOW")
 		self:UnregisterEvent("MERCHANT_CLOSED")
+		self:UnregisterEvent("MERCHANT_SHOW")
 		self:UnregisterEvent("TRADE_CLOSED")
 		self:UnregisterEvent("TRADE_SHOW")
 	elseif (

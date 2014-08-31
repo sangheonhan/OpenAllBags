@@ -1,7 +1,7 @@
 
--- Copyright (c) 2009-2013, Sven Kirmess
+-- Copyright (c) 2009-2014, Sven Kirmess
 
-local Version =10 
+local Version = 11 
 local Loaded = false
 
 local function EventHandler(self, event, ...)

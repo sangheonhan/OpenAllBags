@@ -1,7 +1,7 @@
 
 .PHONY: clean release
 
-VERSION=11
+VERSION=12
 NAME=OpenAllBags
 
 clean:

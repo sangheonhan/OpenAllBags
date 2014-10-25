@@ -8,11 +8,14 @@ work together with "Soul Pouch".
 
 *** Changelog
 
+Version 12
+ * Updated TOC for WoW 6.0.0
+
 Version 11
  * Added support for reforge and void storage
 
 Version 10
- * Updated TOT for WoW 5.2.0
+ * Updated TOC for WoW 5.2.0
 
 Version 9
  * Updated for MoP.

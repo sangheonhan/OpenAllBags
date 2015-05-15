@@ -8,6 +8,11 @@ work together with "Soul Pouch".
 
 *** Changelog
 
+Version 13
+ * Updated TOC for WoW 6.1.0
+ * Changed project web page to GitHub
+   https://github.com/skirmess/open-all-bags
+
 Version 12
  * Updated TOC for WoW 6.0.0
 

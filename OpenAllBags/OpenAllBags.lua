@@ -1,7 +1,7 @@
 
--- Copyright (c) 2009-2016, Sven Kirmess
+-- Copyright (c) 2009-2018, Sven Kirmess
 
-local Version = 14
+local Version = 15
 local Loaded = false
 
 local function EventHandler(self, event, ...)
@@ -11,8 +11,6 @@ local function EventHandler(self, event, ...)
 		self:RegisterEvent("AUCTION_HOUSE_SHOW")
 		self:RegisterEvent("BANKFRAME_CLOSED")
 		self:RegisterEvent("BANKFRAME_OPENED")
-		self:RegisterEvent("FORGE_MASTER_CLOSED")
-		self:RegisterEvent("FORGE_MASTER_OPENED")
 		self:RegisterEvent("GUILDBANKFRAME_CLOSED")
 		self:RegisterEvent("GUILDBANKFRAME_OPENED")
 		self:RegisterEvent("MAIL_CLOSED")
@@ -33,8 +31,6 @@ local function EventHandler(self, event, ...)
 		self:UnregisterEvent("AUCTION_HOUSE_SHOW")
 		self:UnregisterEvent("BANKFRAME_CLOSED")
 		self:UnregisterEvent("BANKFRAME_OPENED")
-		self:UnregisterEvent("FORGE_MASTER_CLOSED")
-		self:UnregisterEvent("FORGE_MASTER_OPENED")
 		self:UnregisterEvent("GUILDBANKFRAME_CLOSED")
 		self:UnregisterEvent("GUILDBANKFRAME_OPENED")
 		self:UnregisterEvent("MAIL_CLOSED")
@@ -48,7 +44,6 @@ local function EventHandler(self, event, ...)
 	elseif (
 		event == "AUCTION_HOUSE_SHOW" or
 		event == "BANKFRAME_OPENED" or
-		event == "FORGE_MASTER_OPENED" or
 		event == "GUILDBANKFRAME_OPENED" or
 		event == "MAIL_SHOW" or
 		event == "MERCHANT_SHOW" or
@@ -71,7 +66,6 @@ local function EventHandler(self, event, ...)
 	elseif (
 		event == "AUCTION_HOUSE_CLOSED" or
 		event == "BANKFRAME_CLOSED" or
-		event == "FORGE_MASTER_CLOSED" or
 		event == "GUILDBANKFRAME_CLOSED" or
 		event == "MAIL_CLOSED" or
 		event == "MERCHANT_CLOSED" or

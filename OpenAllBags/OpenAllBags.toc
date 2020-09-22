@@ -1,4 +1,4 @@
-## Interface: 80000
+## Interface: 11300
 ## Title: OpenAllBags
 ## Author: Sven Kirmess
 ## Notes: Opens all bags whenever you open the bank, the AH, the mail or a trade.

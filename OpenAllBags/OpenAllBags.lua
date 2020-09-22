@@ -11,16 +11,12 @@ local function EventHandler(self, event, ...)
 		self:RegisterEvent("AUCTION_HOUSE_SHOW")
 		self:RegisterEvent("BANKFRAME_CLOSED")
 		self:RegisterEvent("BANKFRAME_OPENED")
-		self:RegisterEvent("GUILDBANKFRAME_CLOSED")
-		self:RegisterEvent("GUILDBANKFRAME_OPENED")
 		self:RegisterEvent("MAIL_CLOSED")
 		self:RegisterEvent("MAIL_SHOW")
 		self:RegisterEvent("MERCHANT_CLOSED")
 		self:RegisterEvent("MERCHANT_SHOW")
 		self:RegisterEvent("TRADE_CLOSED")
 		self:RegisterEvent("TRADE_SHOW")
-		self:RegisterEvent("VOID_STORAGE_CLOSE")
-		self:RegisterEvent("VOID_STORAGE_OPEN")
 
 		if ( not Loaded ) then
 			DEFAULT_CHAT_FRAME:AddMessage(string.format("OpenAllBags %i loaded.", Version))
@@ -31,24 +27,18 @@ local function EventHandler(self, event, ...)
 		self:UnregisterEvent("AUCTION_HOUSE_SHOW")
 		self:UnregisterEvent("BANKFRAME_CLOSED")
 		self:UnregisterEvent("BANKFRAME_OPENED")
-		self:UnregisterEvent("GUILDBANKFRAME_CLOSED")
-		self:UnregisterEvent("GUILDBANKFRAME_OPENED")
 		self:UnregisterEvent("MAIL_CLOSED")
 		self:UnregisterEvent("MAIL_SHOW")
 		self:UnregisterEvent("MERCHANT_CLOSED")
 		self:UnregisterEvent("MERCHANT_SHOW")
 		self:UnregisterEvent("TRADE_CLOSED")
 		self:UnregisterEvent("TRADE_SHOW")
-		self:UnregisterEvent("VOID_STORAGE_CLOSE")
-		self:UnregisterEvent("VOID_STORAGE_OPEN")
 	elseif (
 		event == "AUCTION_HOUSE_SHOW" or
 		event == "BANKFRAME_OPENED" or
-		event == "GUILDBANKFRAME_OPENED" or
 		event == "MAIL_SHOW" or
 		event == "MERCHANT_SHOW" or
-		event == "TRADE_SHOW" or
-		event == "VOID_STORAGE_OPEN"
+		event == "TRADE_SHOW"
 	) then
 		CloseAllBags()
 		OpenAllBags()
@@ -66,11 +56,9 @@ local function EventHandler(self, event, ...)
 	elseif (
 		event == "AUCTION_HOUSE_CLOSED" or
 		event == "BANKFRAME_CLOSED" or
-		event == "GUILDBANKFRAME_CLOSED" or
 		event == "MAIL_CLOSED" or
 		event == "MERCHANT_CLOSED" or
-		event == "TRADE_CLOSE" or
-		event == "VOID_STORAGE_CLOSE"
+		event == "TRADE_CLOSE"
 	) then
 		local i
 		for i = 0, NUM_BAG_SLOTS do
